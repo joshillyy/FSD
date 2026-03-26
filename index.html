@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PathFinder | Post-2nd Year Career Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Path<span>Finder</span></div>
+        <button class="nav-btn" onclick="location.reload()">Reset App</button>
+    </nav>
+
+    <section id="hero" class="view active">
+        <div class="hero-card">
+            <h1>Your Future, <br>Mapped Out.</h1>
+            <p>Finished your 2nd year? It's time to decide. Whether it's higher studies, a high-growth job, or starting your own venture—we have the roadmap.</p>
+            <button class="cta-btn" onclick="showView('quiz')">Start My Assessment</button>
+        </div>
+    </section>
+
+    <section id="quiz" class="view">
+        <div class="container">
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <div id="quiz-box" class="card">
+                <h2 id="question-text">Loading...</h2>
+                <div id="options-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="results" class="view">
+        <div class="container">
+            <header class="results-header">
+                <h1>Your Personalized Roadmap</h1>
+                <p>Based on your strengths and preferences, here is your path forward.</p>
+            </header>
+            
+            <div id="roadmap-display">
+                </div>
+
+            <div class="actions">
+                <button class="print-btn" onclick="window.print()">Save as PDF</button>
+                <button class="reset-btn" onclick="location.reload()">Retake Quiz</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>"The best way to predict the future is to create it." — Abraham Lincoln</p>
+        <div class="contact">Support: info@pathfinder.edu</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
